@@ -44,6 +44,7 @@ section1 */
 .section1_content{
     width: 50%;
     height: 400px;
+    margin-right: 40px;
 }
 .section1 h1{
     display: flex;
@@ -91,7 +92,7 @@ section1 */
     width: 91.6%;
 }
 .section2_title--border{
-    width: 71.3%;
+    width: 73%;
     height: 1px;
     margin: auto;
     background-image: linear-gradient(rgba(255, 127, 0, 1),rgba(194, 0, 12, 1));
@@ -104,7 +105,7 @@ section1 */
     align-items: center;
 }
 .section2_body--item{
-    width: 23%;
+    width: calc((100% - ( 26px * 3 ) ) / 4);
     height: 500px;
     padding: 20px;
     border-radius: 8px;
@@ -268,15 +269,22 @@ footer{
 .footer_logo{
     width: 34.16%;
     height: 173px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.logo{
-    width: 23.4%;
+.logo3{
     height: max-content;
     position: absolute;
-    top: 375%;
-    left: 7%;
-    height: max-content;
+    margin-top: 170px;
     padding: 27px 50px;
+    z-index: 1;
+}
+.logo4{
+    width: 30%;
+    height: max-content; 
+    margin-top: 170px;
+    position:absolute;
 }
 .footer_menu{
     width: 25.2%;
